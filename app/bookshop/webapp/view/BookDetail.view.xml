@@ -1,0 +1,36 @@
+<mvc:View
+	controllerName="joserojas.bookshop.bookshop.controller.BookDetail"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form">
+	<Page title="Book Detail">
+		<content>
+			<form:SimpleForm editable="true">
+				<Label text="ID" />
+				<Input
+					value="{ID}"
+					editable="false" />
+
+				<Label text="Title" />
+				<Input value="{title}" />
+
+				<Label text="Stock" />
+				<Input
+					value="{stock}"
+					type="Number" />
+
+				<Label text="Price" />
+				<Input value="{price}" />
+			</form:SimpleForm>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button
+					text="Save"
+					type="Emphasized"
+					press=".onSave" />
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>
